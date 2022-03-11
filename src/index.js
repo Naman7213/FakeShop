@@ -9,7 +9,7 @@ import store from "./redux/store.js";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={window.location.pathname || ''}>
       <Provider store={store}>
         <App />
       </Provider>
